@@ -1,0 +1,13 @@
+[Unit]
+Description=Telegram bot 'Telegram-Reapiter'
+After=multi-user.target
+
+
+[Service]
+Type=idle
+User=root
+ExecStart=/usr/bin/python3 /home/telegram_bot/bot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
